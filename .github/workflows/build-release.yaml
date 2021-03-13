@@ -13,6 +13,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '12'
+      - name: Install npm modules
+        run: npm install
       - name: Build and publish artifact
         run: npx electron-builder -p always
         env:
@@ -24,6 +26,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '12'
+      - name: Install npm modules
+        run: npm install
       - name: Build and publish artifact
         run: npx electron-builder -p always
         env:
@@ -39,6 +43,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
          node-version: '12'
+      - name: Install npm modules
+        run: npm install
       - name: Build and publish artifact
         run: npx electron-builder -p always
         env:

@@ -11,7 +11,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '12'
-      - name: Install modules
+      - name: Install npm modules
         run: npm install
       - name: Run ESLint
         run: npm run lint
@@ -22,7 +22,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '12'
-      - name: Install modules
+      - name: Install npm modules
         run: npm install
       - name: Run Jest
         run: npm run test
