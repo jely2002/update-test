@@ -1,10 +1,10 @@
 const { app, BrowserWindow, ipcMain, dialog, Menu, globalShortcut, shell} = require('electron');
-const Environment = require('../update-test/modules/Environment');
+const Environment = require('./modules/Environment');
 const path = require('path');
-const QueryManager = require("../update-test/modules/QueryManager");
-const ErrorHandler = require("../update-test/modules/ErrorHandler");
-const BinaryUpdater = require("../update-test/modules/BinaryUpdater");
-const AppUpdater = require("../update-test/modules/AppUpdater");
+const QueryManager = require("./modules/QueryManager");
+const ErrorHandler = require("./modules/ErrorHandler");
+const BinaryUpdater = require("./modules/BinaryUpdater");
+const AppUpdater = require("./modules/AppUpdater");
 
 let win
 let env
