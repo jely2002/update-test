@@ -8,8 +8,8 @@ const AppUpdater = require("./modules/AppUpdater");
 
 let win
 let env
-let queryManager
 let appStarting = true;
+let queryManager
 
 function sendLogToRenderer(log, isErr) {
     win.webContents.send("log", {log: log, isErr: isErr});
