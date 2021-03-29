@@ -29,11 +29,11 @@ jobs:
       - name: Install npm modules
         run: npm ci
       - name: Build and publish artifact
-        run: npm_config_yes=true npx electron-builder -p always
+        run: env npm_config_yes=true npx electron-builder -p always
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and publish portable artifact
-        run: npm_config_yes=true npx electron-builder --win portable -p always
+        run: env npm_config_yes=true npx electron-builder --win portable -p always
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   build-mac:
@@ -49,3 +49,4 @@ jobs:
         run: npm_config_yes=true npx electron-builder -p always
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
